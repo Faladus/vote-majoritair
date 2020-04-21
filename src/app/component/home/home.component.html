@@ -1,0 +1,72 @@
+<main class="app-content" [style.backgroundImage]="backgroundImage">
+  <div class="flex-vert">
+    <div class="flex-horiz">
+      <div class="card">
+        <div class="card-body">
+          <h1>Bonjour</h1>
+        </div>
+      </div>
+    </div>
+    <div class="flex-horiz">
+      <div class="surveyCard infos-sondage-evenement">
+        <div class="surveyCard-header">
+          <div class="surveyCard-header-info">
+            <div class="surveyCard-header-info-user titre-1">Sondages</div>
+          </div>
+        </div>
+        <div class="surveyCard-content">
+          <a class="a-titre-2" href="/inCreationSurveys">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">playlist_play</mat-icon>0 sondage
+              <ng-container *ngIf="0 > 1">s</ng-container> en création
+            </p>
+          </a>
+          <a class="a-titre-2" href="/openSurveys">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">edit</mat-icon>0 sondage<ng-container
+                *ngIf="0 > 1">s</ng-container> publié<ng-container *ngIf="0 > 1">s
+              </ng-container>
+            </p>
+          </a>
+          <a class="a-titre-2" href="/closedSurveys">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">dashboard</mat-icon>0 sondage<ng-container
+                *ngIf="0 > 1">s</ng-container> fini<ng-container *ngIf="0 > 1">s</ng-container>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="surveyCard infos-sondage-evenement">
+        <div class="surveyCard-header">
+          <div class="surveyCard-header-info">
+            <div class="surveyCard-header-info-user titre-1">Evenements</div>
+          </div>
+        </div>
+        <div class="surveyCard-content">
+
+          <a class="a-titre-2" href="/inCreationEvenements">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">calendar_today</mat-icon>0 évenement
+              <ng-container *ngIf="0 > 1">s</ng-container> à venir
+            </p>
+          </a>
+          <a class="a-titre-2" href="/openEvenements">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">arrow_downward</mat-icon>0
+              évenement<ng-container *ngIf="0 > 1">s</ng-container> en cours
+            </p>
+          </a>
+          <a class="a-titre-2" href="/closedEvenements">
+            <p class="titre-2">
+              <mat-icon matListIcon class="app-nav-list-icon">dashboard</mat-icon>0 évenement
+              <ng-container *ngIf="0 > 1">s</ng-container> passé<ng-container *ngIf="0 > 1">
+                s</ng-container>
+            </p>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
