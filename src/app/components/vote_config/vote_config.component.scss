@@ -1,0 +1,184 @@
+.app-header {
+  padding: 15px;
+  background-color: #3b3b3b;
+}
+
+.app-title {
+  margin: 0;
+  color: #ffffff;
+}
+
+.app-content {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+
+  .card {
+    margin: auto;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    min-width: 30%;
+    text-align: center;
+
+    .card-body {
+      padding: 30px;
+    }
+  }
+}
+
+  .flex-vert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+  }
+
+  .infos-sondage-evenement {
+    display: inline-block;
+    width: 50%;
+    margin: 3%;
+  }
+  
+  .flex-horiz{
+    display: flex;
+    margin-bottom: auto;
+    align-items: flex-start;
+  }
+
+  .surveyCard {
+    flex: 1 0 90%;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    background: #f5f6fa;
+    align-self: center;
+  }
+  
+  .surveyCard-header {
+    background: #003b69;
+    display: flex;
+    align-items: center;
+  }
+  
+  .surveyCard-header-info {
+    color: #f5f6fa;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .surveyCard-header-info-user {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .surveyCard-header-delete {
+    float: right;
+    color: #f5f6fa;
+  }
+  
+  .surveyCard-content {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+
+  .a-titre-2{
+    margin-left: 10%; 
+  }
+
+  .carousel-subtitle{
+    padding: 3px 10px; 
+    background: rgba(38,38,43,0.75);
+    transform: translateY(-100%);
+    display: inline-block;
+    width: calc( 100% - 20px );
+  }
+
+  .carousel-subtitle-date{
+    float: right;
+  }
+  
+  .surveyCard-content-title {
+    margin: auto;
+  }
+
+  .titre-1, .titre-2{
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  a:visited .titre-2, a:active .titre-2{
+    color: black;
+  }
+
+  .titre-1{
+    font-size: 2.1em;
+  }
+  .titre-2{
+    font-size: 1.6em;
+    margin: 5% 0;
+    color: black;
+  }
+
+  .titre-2 .mat-icon {
+    margin-right: 30px;
+    font-size: 1.5em;
+    vertical-align: text-top;
+  }
+
+  $transition_time:.2s;
+
+.carousel {
+  color:white;
+  .content {
+    display: flex;
+
+    .item {
+      width: 100%;
+      display: block;
+
+      transition: opacity 0.295s linear $transition_time;
+
+      &.visible {
+        opacity: 1;
+      }
+
+      .img {
+        width: 100%;
+        height: 300px;
+        display: block;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+
+  }
+
+  .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    border: 2px solid;
+    opacity: 0.5;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  .click-area {
+    width: 50px;
+    text-align: center;
+
+    i {
+      font-size: 3em;
+    }
+  }
+}

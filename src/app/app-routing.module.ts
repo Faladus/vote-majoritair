@@ -1,20 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './component/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { BackgroundImageResolver } from './resolvers/background-image.resolver';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
     resolve: {
-      background: BackgroundImageResolver
+      background: BackgroundImageResolver,
+    },
+  },
+  {
+    path: '',
+    component: HomeComponent,
+    resolve: {
+      background: BackgroundImageResolver,
     },
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [BackgroundImageResolver]
 })
 export class AppRoutingModule { }

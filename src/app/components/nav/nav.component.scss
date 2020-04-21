@@ -1,0 +1,47 @@
+@import url("../../../assets/css/hover-min.css");
+
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.mat-sidenav {
+  width: 300px;
+}
+
+.toolbar-title {
+  margin: 0 16px 0 16px;
+}
+
+.mat-subheader {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  max-width: auto;
+}
+
+.app-nav-list-icon {
+  margin: 0 12px 0 12px;
+}
+
+.brand {
+  padding: 20px 20px 5px;
+  
+  .avatar{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 62px;
+    color: #7a9ab6;
+    background: #003b69;
+    border-radius: 100%;
+  }
+}

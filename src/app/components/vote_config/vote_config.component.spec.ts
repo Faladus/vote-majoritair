@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutComponent } from './layout.component';
+import { VoteConfigComponent } from './vote_config.component';
 
-describe('LayoutComponent', () => {
-  let component: LayoutComponent;
-  let fixture: ComponentFixture<LayoutComponent>;
+describe('VoteConfigComponent', () => {
+  let component: VoteConfigComponent;
+  let fixture: ComponentFixture<VoteConfigComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        LayoutComponent
-      ],
+      declarations: [ VoteConfigComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutComponent);
+    fixture = TestBed.createComponent(VoteConfigComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

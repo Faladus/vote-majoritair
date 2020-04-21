@@ -1,0 +1,42 @@
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="side" opened>
+
+      	<div class="brand">
+            <a class="avatar" href="#">@</a>
+          </div>
+
+      <mat-nav-list>
+        <h2 matSubheader>Jugement Majoritaire</h2>
+
+        <a mat-list-item routerLink="/" style="height: 0;"></a>
+  
+        <a *ngFor="let item of myWorkRoutes"
+          mat-list-item
+          [routerLink]="[item.route]"
+          routerLinkActive="list-item-active" class="hvr-fade">
+          <mat-icon matListIcon class="app-nav-list-icon"> {{ item.icon }} </mat-icon>
+          {{item.title}}
+        </a>
+  
+        <mat-divider></mat-divider>
+  
+        <h2 matSubheader>Administration</h2>
+        
+        <a *ngFor="let item of customerRoutes"
+          mat-list-item
+          [routerLink]="[item.route]"
+          routerLinkActive="list-item-active" class="hvr-fade">
+          <mat-icon matListIcon class="app-nav-list-icon"> {{ item.icon }} </mat-icon>
+          {{item.title}}
+        </a>
+  
+      </mat-nav-list>
+  
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
