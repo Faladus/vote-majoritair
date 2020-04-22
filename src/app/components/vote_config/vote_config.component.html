@@ -5,6 +5,21 @@
         <div class="surveyCard-header-info-user titre-1">{{name}}</div>
       </div>
     </div>
-    
+    <div class="card">
+      <div class="card-body">
+        <div class="input-text">
+        <mat-form-field appearance="fill" width="">
+          <mat-label>Nom du vote</mat-label>
+          <input matInput [(ngModel)]="vote.name">
+        </mat-form-field>
+        </div>
+        <div class="input-text">
+        <mat-form-field appearance="fill" width="">
+          <mat-label>Description du vote</mat-label>
+          <textarea matInput [(ngModel)]="vote.description" style="resize: none; height: 100px;"></textarea>
+        </mat-form-field>
+        </div>
+      </div>
+    </div>
   </div>
 </main>

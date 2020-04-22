@@ -20,6 +20,7 @@ import { ApiService } from './api.service';
 
 // Page Components
 import { HomeComponent } from './components/home/home.component';
+import { VoteConfigComponent } from './components/vote_config/vote_config.component';
 
 // Question & Answer Template Components
 
@@ -71,6 +72,7 @@ import {
     LayoutComponent,
     NavComponent,
     HomeComponent,
+    VoteConfigComponent,
   ],
   imports: [
     BrowserModule,

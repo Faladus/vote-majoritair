@@ -24,4 +24,98 @@
       padding: 30px;
     }
   }
+
+  .surveyCard {
+    flex: 1 0 90%;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    background: #f5f6fa;
+    align-self: center;
+    border-radius: 0 0 20px 20px;
+  }
+  
 }
+
+.app-content {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+
+  .card {
+    margin: auto;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    min-width: 30%;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+
+    .card-body {
+      padding: 30px;
+    }
+  }
+}
+
+  .flex-vert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+  }
+
+  .infos-sondage-evenement {
+    display: inline-block;
+    width: 50%;
+    margin: 3%;
+  }
+  
+  .flex-horiz{
+    display: flex;
+    margin-bottom: auto;
+    align-items: flex-start;
+  }
+
+  .surveyCard-header {
+    background: #003b69;
+    display: flex;
+    align-items: center;
+  }
+  
+  .surveyCard-header-info {
+    color: #f5f6fa;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .surveyCard-header-info-user {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .surveyCard-header-delete {
+    float: right;
+    color: #f5f6fa;
+  }
+  
+  .surveyCard-content {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+
+  .a-titre-2{
+    margin-left: 10%; 
+  }
+
+  .input-text{
+    width: 50%;
+    margin: auto;
+    display: block;
+    .mat-form-field{
+      width: 100%;
+    }
+  }

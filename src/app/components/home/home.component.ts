@@ -15,7 +15,7 @@ export class HomeComponent extends LayoutComponent implements OnInit {
   public name;
 
   constructor(
-    protected route: ActivatedRoute, private apiService: ApiService, protected dialog: MatDialog
+    protected route: ActivatedRoute, private apiService: ApiService
   ) {
     super(route);
 
